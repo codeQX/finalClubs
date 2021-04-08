@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主要色调，actionBar默认使用该颜色，Toolbar导航栏的底色-->
+    <color name="public_colorPrimary">#15AD67</color>
+    <!--主要暗色调，statusBarColor默认使用该颜色-->
+    <color name="public_colorPrimaryDark">#10A060</color>
+    <!--CheckBox，RadioButton，SwitchCompat等一般控件的  选中效果  默认采用该颜色-->
+    <color name="public_colorAccent">#0679C3</color>
+
+    <color name="public_white">#FFFFFF</color>
+    <color name="public_black">#000000</color>
+    <color name="public_red">#FF0000</color>
+    <color name="public_half_colorPrimary">#bb0679C3</color>
+
+    <color name="public_start_color">#D7E7ED</color>
+
+    <color name="public_color_transparent">#00000000</color>
+    <color name="public_half_transparent">#33000000</color>
+    <color name="public_black_transparent">#80000000</color>
+
+    <color name="public_background">#FFF9F9F9</color>
+    <color name="public_grey_common">#333333</color>
+    <color name="public_line_common">#E9E9E9</color>
+
+    <color name="public_tv_common_grey">#717C88</color>
+    <color name="public_tv_common_black">#485057</color>
+
+    <color name="public_blue_light">#E7EFFE</color>
+    <color name="public_yellow_light">#F8E7AE</color>
+    <color name="public_hint_color">#a9a9a9</color>
+
+</resources>

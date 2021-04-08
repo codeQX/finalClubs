@@ -1,0 +1,4 @@
+include ':libCommonSdk'
+include ':libBase'
+include ':app'
+rootProject.name = "finalClubs"

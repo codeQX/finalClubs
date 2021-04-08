@@ -1,0 +1,46 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="public_app_theme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/public_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/public_colorPrimaryDark</item>
+        <item name="colorAccent">@color/public_colorAccent</item>
+        <item name="android:windowBackground">@color/public_background</item>
+        <item name="android:windowAnimationStyle">@style/public_Activity_Animation</item>
+
+
+    </style>
+
+    <!-- activity转场动画 -->
+    <style name="public_Activity_Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/public_translate_right_to_center
+        </item>
+        <item name="android:activityOpenExitAnimation">@anim/public_translate_center_to_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/public_translate_left_to_center
+        </item>
+        <item name="android:activityCloseExitAnimation">@anim/public_translate_center_to_right
+        </item>
+    </style>
+
+    <!-- 欢迎页主题 -->
+    <style name="public_WelcomeTheme" parent="public_app_theme">
+        <item name="android:windowBackground">@drawable/public_bg_welcome</item>
+        <item name="colorPrimary">@color/public_color_transparent</item>
+        <item name="colorPrimaryDark">@color/public_color_transparent</item>
+    </style>
+
+
+    <!-- 微信主题 -->
+    <style name="public_WXTheme" parent="public_app_theme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoDisplay">false</item>
+        <item name="android:windowAnimationStyle">@style/public_Activity_Animation</item>
+
+        <item name="android:windowBackground">@color/public_color_transparent</item>
+        <item name="colorPrimary">@color/public_color_transparent</item>
+        <item name="colorPrimaryDark">@color/public_color_transparent</item>
+    </style>
+
+
+</resources>

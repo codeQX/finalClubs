@@ -1,0 +1,34 @@
+// 最顶层的build文件，这里你可以为所有子项目或者module添加通用的配置选项
+buildscript {
+    ext.kotlin_version = "1.4.31"
+    ext.hilt_version = "2.31.2-alpha"
+    ext.room_version = "2.2.6"
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.1.2"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // 提示：不要把应用程序的依赖放到这里，他们属于每个module自己的build.gradle文件
+
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
+
+
+        def nav_version = "2.3.4"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
